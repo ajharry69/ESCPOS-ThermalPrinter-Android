@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace 'com.dantsu.thermalprinter'
     compileSdkVersion 34
     defaultConfig {
         applicationId "com.dantsu.thermalprinter"
@@ -20,7 +21,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    namespace 'com.dantsu.thermalprinter'
 }
 
 dependencies {

@@ -6,6 +6,7 @@ plugins {
 def libraryVersionName = "3.5.0"
 
 android {
+    namespace 'com.dantsu.escposprinter'
     compileSdkVersion 34
 
     defaultConfig {
@@ -22,8 +23,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    namespace 'com.dantsu.escposprinter'
 
+    publishing {
+        // Publishes "release" build component created by
+        // Android Gradle plugin
+        singleVariant("release")
+    }
 }
 
 dependencies {
@@ -48,9 +53,9 @@ afterEvaluate {
                     name = 'Android library for ESC/POS Thermal Printer'
                     description = 'Useful library to help Android developers to print with (Bluetooth, TCP, USB) ESC/POS thermal printers.'
                 }
-                /*afterEvaluate {
+                afterEvaluate {
                     from components.release
-                }*/
+                }
             }
         }
     }
