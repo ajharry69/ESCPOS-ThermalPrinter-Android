@@ -40,7 +40,7 @@ Useful library to help Android developers to print with (Bluetooth, TCP, USB) ES
 
 ## Android version
 
-Developed for SDK version 16 (Android 4.1 Jelly Bean) and above.
+Developed for SDK version 19 (Android 4.4 KitKat) and above.
 
 
 ## Tested printers

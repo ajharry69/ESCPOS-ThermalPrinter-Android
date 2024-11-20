@@ -10,7 +10,7 @@ android {
     compileSdkVersion 34
 
     defaultConfig {
-        minSdk 16
+        minSdkVersion 19
         targetSdkVersion 34
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -58,5 +58,11 @@ afterEvaluate {
                 }
             }
         }
+    }
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
     }
 }
